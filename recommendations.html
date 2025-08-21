@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recommendations — Wanderly</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">Wanderly</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main-content">
+    <h1>Recommendations</h1>
+
+    <section id="beaches">
+      <h2>Beach Recommendations</h2>
+      <div class="grid">
+        <div class="place">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=60" alt="Beach 1" />
+          <h3>Sunrise Cove</h3>
+          <p>A calm beach with golden sand and gentle waves — perfect for sunrise walks.</p>
+        </div>
+        <div class="place">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=801&q=60" alt="Beach 2" />
+          <h3>Coral Bay</h3>
+          <p>Clear waters great for snorkeling and family-friendly facilities nearby.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="temples">
+      <h2>Temple Recommendations</h2>
+      <div class="grid">
+        <div class="place">
+          <img src="https://images.unsplash.com/photo-1533743983669-94fa2a1f1b6c?w=800&q=60" alt="Temple 1" />
+          <h3>Ancient Hill Temple</h3>
+          <p>Historic temple located on a peaceful hill with panoramic views.</p>
+        </div>
+        <div class="place">
+          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800&q=60" alt="Temple 2" />
+          <h3>Lakeside Pagoda</h3>
+          <p>A serene pagoda beside a lake known for evening lantern ceremonies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="by-country">
+      <h2>Recommendation by Country</h2>
+      <p>Select a country to see two highlighted destinations.</p>
+
+      <label for="countrySelect">Pick a country</label>
+      <select id="countrySelect" aria-label="Country select">
+        <option value="">-- Choose --</option>
+        <option value="japan">Japan</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="brazil">Brazil</option>
+      </select>
+
+      <div id="countryResults" class="grid country-results">
+        <!-- JS will inject country-specific cards here -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Wanderly.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
